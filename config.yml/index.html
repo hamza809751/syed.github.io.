@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Developer & Graphic Designer Portfolio</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ff6347;
+  }
+
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+  }
+
+  h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff6347;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+.intro img {
+  width: 400px; /* Increased from 150px to 250px */
+  border-radius: 70%;
+  margin-bottom: 50px;
+  animation: bounceIn 1s;
+}
+  
+
+  .skills, .projects, .contact {
+    display: grid;
+    gap: 20px;
+  }
+
+  .skill, .project, .contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .skill:hover, .project:hover, .contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  /* Add some animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Responsive */
+  @media(max-width: 768px){
+    body {
+      padding: 10px;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SYD HAMZA SHAH</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="intro">
+  <img src="./image.pnj/3651953378469127.jpeg" alt="height 250px width 250px" />
+  <h2>Developer & Graphic Designer</h2>
+  <p>Hello! I'm Syed Hamza, a passionate developer and graphic designer with experience in creating beautiful websites and graphics. Welcome to my portfolio!</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, React, Node.js</p>
+    </div>
+    <div class="skill">
+      <h3>Graphic Design</h3>
+      <p>Adobe Photoshop, Illustrator, Figma</p>
+    </div>
+    <div class="skill">
+      <h3>Other Skills</h3>
+      <p>UI/UX Design, Animation, Branding</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A modern responsive portfolio built with React and CSS animations.</p>
+    </div>
+    <div class="project">
+      <h3>Logo Design</h3>
+      <p>Creative logo designs for various brands and startups.</p>
+    </div>
+    <div class="project">
+      <h3>Mobile App UI</h3>
+      <p>Designed user-friendly mobile app interfaces for e-commerce.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div class="contact-info">
+      <h3>Email</h3>
+      <p>hamzasha809@gmail.com</p>
+    </div>
+    <div class="contact-info">
+      <h3>Phone</h3>
+      <p>+923092507726</p>
+    </div>
+    <div class="contact-info">
+      <h3>Social</h3>
+      <p>LinkedIn, Github, Upwork</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
